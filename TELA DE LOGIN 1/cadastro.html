@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<HTML lang="PT-br">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>cadastro </title>
+    </head>
+    <body>
+        <form id="register-form" name="form">
+         <div class="main-login">
+            <div class="left-login">
+                <h1>crie uma conta<br> para entrar no nosso site</h1>
+                <img src="social.svg" class= left-login-image alt="social animação">
+            </div>
+
+
+            <div class="right-login">
+                <div class="card-login">
+                    <h1>REGISTRAR-SE</h1>
+                    <div class="textfield">
+                     <label for="email">Email</label>
+                     <input type="email" name="email" id="txtEmail" placeholder="email"maxlength="30" >
+                        </div>
+
+
+                    <div class="textfield">
+                        <label for="usuario" id="usuario">Usuário</label>
+                        <input type="text" name="usuario" id="txtUser" placeholder="Usuário" >
+                     </div>
+
+
+                     <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="txtPass" placeholder="Senha" >
+                      </div>
+
+                      
+                     <div>
+                        <input type="checkbox" name="aceito" id="aceito">
+                        <label for="aceito" id="aceito">Eu li e aceito os <a href="#">termos de uso</a></label>
+                    <button class="btn-login" value="registrar" id="btn-login" onclick="enviardados()">cadastrar</button>
+                </div>
+            </div>
+        </body>
+      <form>
+        
+        <script>
+
+            function enviardados() {
+               
+
+                if (document.getElementById("txtUser").lenght<5){
+                alert("erro")
+         }}
+        
+        </script>
+
+    </html>
